@@ -1,0 +1,224 @@
+  :root {
+    /* Light */
+
+    --body-bg-light: #ccc;
+
+    --header-bg-light: #949494;
+
+    --themeBtn-bg-light: rgb(210, 252, 255);
+    --themeBtn-color-light: #000000;
+
+    --message-color-light: #000000;
+    --message-odd-bg-light: #efefef;
+
+    --form-bg-light: #949494;
+
+    --name-bg-light: beige;
+    --name-color-light: #222;
+
+    --input-bg-light: #e4e4e4;
+
+    --join-msg-light: rgb(0, 238, 255);
+
+    --btn-bg-light: #222;
+    --btn-color-light: white;
+
+    /* Dark */
+
+    --body-bg-dark: #5c5c5c;
+
+    --header-bg-dark: #222;
+
+    --themeBtn-bg-dark: rgb(157, 255, 0);
+    --themeBtn-color-dark: #FFFFFF;
+
+    --message-color-dark: #FFFFFF;
+    --message-odd-bg-dark: #4e4e4e;
+
+    --form-bg-dark: #222;
+
+    --name-bg-dark: #5c5c5c;
+    --name-color-dark: #FFFFFF;
+
+    --input-bg-dark: #5c5c5c;
+    --input-color-dark: #FFFFFF;
+
+    --join-msg-dark: rgb(157, 255, 0);
+
+    --btn-bg-dark: #5c5c5c;
+    --btn-color-dark: #FFFFFF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  body {
+    background: var(--body-bg-light);
+  }
+
+  .header {
+    width: 100%;
+    height: 60px;
+    background: var(--header-bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .connection {
+    background: var(--themeBtn-bg-light);
+    color: var(--themeBtn-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    /* padding: 3px; */
+    border: none;
+    border-radius: 50%;
+  }
+
+  .themeBtn {
+    background: var(--themeBtn-bg-light);
+    color: var(--themeBtn-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    /* padding: 3px; */
+    border: none;
+    border-radius: 50%;
+  }
+
+  .moonImg,
+  .conImg,
+  .sunImg {
+    width: 35px;
+  }
+
+  .form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--form-bg-light);
+    padding: 5px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .name {
+    height: 35px;
+    background: var(--name-bg-light);
+    padding: 15px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--name-color-light);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .input {
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background: var(--input-bg-light);
+    margin: 5px;
+    padding: 0 25px;
+    display: flex;
+    width: 100%;
+    outline: none;
+  }
+
+  .btn {
+    background: var(--btn-bg-light);
+    border: none;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    color: var(--btn-color-light);
+    border-radius: 15px;
+  }
+
+  .messages {
+    color: var(--message-color-light);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .messages>li {
+    padding: 10px;
+  }
+
+  .messages>li span {
+    font-weight: 500;
+  }
+
+  .messages>li:nth-child(odd) {
+    background: var(--message-odd-bg-light);
+  }
+
+  .join {
+    color: var(--join-msg-light);
+  }
+
+  /* DARK */
+
+  [data-theme='dark'] body {
+    background: var(--body-bg-dark);
+  }
+
+  [data-theme='dark'] .header {
+    background: var(--header-bg-dark);
+  }
+
+  [data-theme='dark'] .themeBtn {
+    background: var(--themeBtn-bg-dark);
+    color: var(--themeBtn-color-dark);
+  }
+
+  [data-theme='dark'] .form {
+    background: var(--form-bg-dark);
+  }
+
+  [data-theme='dark'] .name {
+    background: var(--name-bg-dark);
+    color: var(--name-color-dark);
+  }
+
+  [data-theme='dark'] .input {
+    background: var(--input-bg-dark);
+    color: var(--input-color-dark);
+  }
+
+  [data-theme='dark'] .join {
+    color: var(--join-msg-dark)
+  }
+
+  [data-theme='dark'] .btn {
+    background: var(--btn-bg-dark);
+    color: var(--btn-color-dark);
+  }
+
+  [data-theme='dark'] .messages {
+    color: var(--message-color-dark);
+  }
+
+  [data-theme='dark'] .messages>li:nth-child(odd) {
+    background: var(--message-odd-bg-dark);
+  }
